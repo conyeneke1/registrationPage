@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-wrapper">
+            <div class="left">
+                <h1>Jiza Tech</h1>
+                <p>Welcome to my registration page. If you don't have an account, kindly registor to get full access to our website.</p>
+                <h5>Login with social media</h5>
+                <div class="buttons">
+                    <button type="button" class="btn btn-1"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button type="button" class="btn btn-2"><i class="fa-brands fa-twitter"></i> Log in with twitter</button>
+                </div> 
+            </div>
+        </div>
+
+        <div class="right-wrapper">
+        <div class="right">
+            <!-- <div class="logo">
+                <p class="logo pl-4 pt-2">Jiza <span>Tech</span></p>
+            </div> -->
+            <h1>Sign up</h1>
+    
+            <form>
+                <div>
+                    <!-- <label for="firstname">First Name</label> -->
+                    <input required type="text" class="form-control" id="firstname" placeholder="Enter your first name">
+                </div>
+
+                <div>
+                    <!-- <label for="lastname">Last Name</label> -->
+                    <input required type="text" class="form-control" id="lastname" placeholder="Enter your last name">
+                </div>
+
+                <div>
+                    <!-- <label for="email">Email</label> -->
+                    <input required type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+
+                <div class="password">
+                    <!-- <label for="inputPassword4">Password</label> -->
+                    <input required type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+
+                <div class="language">
+                    <label class="my-1 mr-2" for="language">Language</label>
+                    <select required class="custom-select my-1 mr-sm-2 mb-3" id="language">
+                        <option selected>Choose...</option>
+                        <option value="1">English</option>
+                        <option value="2">Yoruba</option>
+                        <option value="3">Hausa</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="my-1 mr-2" for="timezone">Timezone</label>
+                    <select class="custom-select my-1 mr-sm-2 mb-3" id="timezone">
+                        <option selected>Choose...</option>
+                        <option value="1">GMT +1</option>
+                        <option value="2">GMT +2</option>
+                        <option value="3">GMT +3</option>
+                    </select>
+                </div>
+                
+                <div class="col-md-6 mb-3">
+                    <!-- <label for="validationCustom04">State</label> -->
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <!-- <label for="validationCustom03">City</label> -->
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                </div>
+
+                <button type="submit">Register</button>
+                
+    
+                </form>
+    
+                <div class="footer">
+                    © 2022 Copyright:
+                    <a class="text-reset fw-bold" href="https://jizatechnologies/">All rights Reserved.</a>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
