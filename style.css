@@ -146,7 +146,7 @@ form div input {
     align-items: center;
     justify-content: center;
     color: #5e5e5e;
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 .footer a {
@@ -164,11 +164,29 @@ form div input {
     .right {
         margin: 5rem 3rem;
     }
+
+    .left-wrapper {
+        height: 100vh;
+    }
+
+    .right-wrapper {
+        height: 100vh;
+    }
+
+    .footer {
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 1060px) {
+    .left {
+        margin: 7rem 3rem;
+    }
 }
 
 @media (max-width: 1000px) {
     .left {
-        margin: 9rem 3rem;
+        margin: 5rem 3rem;
     }
 
     .buttons {
@@ -179,6 +197,18 @@ form div input {
 
     .btn-1 {
         margin-bottom: 1rem;
+    }
+
+    .left-wrapper {
+        height: 100vh;
+    }
+
+    .right-wrapper {
+        height: 100vh;
+    }
+
+    .footer {
+        margin: 2rem 0;
     }
 }
 
@@ -221,6 +251,9 @@ form div input {
         padding: 0.9rem 3rem;
     }
 
+    .footer {
+        margin: 2rem 0;
+    }
 }
 
 @media (max-width: 520px) {
@@ -252,7 +285,7 @@ form div input {
         height: 50%;
     }
 
-    .footer {
+    footer {
         font-size: 0.8rem;
     }
 }
