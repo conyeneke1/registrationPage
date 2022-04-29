@@ -20,7 +20,7 @@
 }
 
 .left {
-    margin: 11rem 5rem;
+    margin: 12rem 5rem;
 }
 
 .left h1 {
@@ -46,7 +46,7 @@
 
 .btn-1 {
     font-size: 1.4rem;
-    padding: 0.7rem 3rem;
+    padding: 0.9rem 3rem;
     border-radius: 2rem;
     border: none;
     background-color: rgb(44, 131, 182);
@@ -156,9 +156,9 @@ form div input {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1310px) {
     .left {
-        margin: 11rem 3rem;
+        margin: 12rem 3rem;
     }
 
     .right {
@@ -166,7 +166,23 @@ form div input {
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
+    .left {
+        margin: 9rem 3rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .btn-1 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
     .container {
         display: flex;
         flex-flow: column;
@@ -192,6 +208,17 @@ form div input {
 
     .right {
         margin: 5rem 3rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .btn-1 {
+        margin-bottom: 0;
+        padding: 0.9rem 3rem;
     }
 
 }
