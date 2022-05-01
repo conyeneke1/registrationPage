@@ -305,6 +305,20 @@ form div input {
 }
 
 @media (max-width: 800px) {
+    .select-option {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .timezone select {
+        width: 100%;
+    }
+
+    .language select {
+        width: 100%;
+    }
+
     .container {
         display: flex;
         flex-flow: column;
