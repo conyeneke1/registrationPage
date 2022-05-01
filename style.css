@@ -200,6 +200,11 @@ form div input {
     .language select {
         width: 16rem;
     }
+
+    .select-option {
+        background-color: #fff;
+    }
+
 }
 
 @media (max-width: 1390px) {
@@ -210,6 +215,11 @@ form div input {
     .language select {
         width: 14rem;
     }
+
+    .select-option {
+        background-color: #fff;
+    }
+
 }
 
 
@@ -241,6 +251,11 @@ form div input {
     .footer {
         margin: 2rem 0;
     }
+
+    .select-option {
+        background-color: #fff;
+    }
+
 }
 
 @media (max-width: 1150px) {
@@ -251,6 +266,11 @@ form div input {
     .language select {
         width: 14.5rem;
     }
+
+    .select-option {
+        background-color: #fff;
+    }
+
 }
 
 @media (max-width: 1060px) {
@@ -265,6 +285,11 @@ form div input {
     .left {
         margin: 10rem 3rem;
     }
+
+    .select-option {
+        background-color: #fff;
+    }
+
 }
 
 @media (max-width: 1000px) {
@@ -302,6 +327,11 @@ form div input {
         margin: 2rem 0;
         font-size: 0.9rem;
     }
+
+    .select-option {
+        background-color: #fff;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -309,6 +339,7 @@ form div input {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-color: #fff;
     }
 
     .timezone select {
@@ -396,6 +427,11 @@ form div input {
         margin: 2rem 0;
         font-size: 0.9rem;
     }
+
+    .select-option {
+        background-color: #fff;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -421,6 +457,7 @@ form div input {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-color: #fff;
     }
 
     .timezone select {
