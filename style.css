@@ -402,3 +402,9 @@ form div input {
         font-size: 4rem;
     }
 }
+
+@media (max-width: 450px) {
+    form div input {
+        width: 20rem;
+    }
+}
