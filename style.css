@@ -20,7 +20,11 @@
 }
 
 .left {
-    margin: 13rem 5rem;
+    /* margin: 13rem 5rem; */
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-15%, -50%);
 }
 
 .left h1 {
@@ -87,29 +91,28 @@
 .right-wrapper {
     width: 55%;
     height: 100vh;
+    position: relative;
 }
 
 .right {
-    margin: 4rem 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .right h1 {
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 form div {
     margin: 1.2rem 0;
 }
 
-form div label {
-    font-size: 1rem;
-    margin-right: 1rem;
-}
-
 form div input {
     display: block;
-    width: 100%;
+    width: 42rem;
     padding: 0.5rem 0;
     border: none;
     outline: none;
@@ -154,7 +157,7 @@ form div input {
 
 .language select {
     /* margin-top: 0.5rem; */
-    width: 18rem;
+    width: 19rem;
 }
 
 .timezone {
@@ -164,7 +167,7 @@ form div input {
 
 .timezone select {
     /* margin-top: 0.5rem; */
-    width: 18rem;
+    width: 19rem;
 }
 
 .select-option {
@@ -178,7 +181,7 @@ form div input {
     border: none;
     border-bottom: 0.1rem solid #000;
     font-size: 1rem;
-    padding: 0.5rem 0;
+    padding-bottom: 0.5rem;
 }
 
 
@@ -193,31 +196,34 @@ form div input {
 
 
 @media (max-width: 1500px) {
+    .left {
+        /* margin: 13rem 5rem; */
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-15%, -50%);
+    }
+
     .timezone select {
-        width: 16rem;
+        width: 17rem;
     }
 
     .language select {
-        width: 16rem;
+        width: 17rem;
     }
-
-    .select-option {
-        background-color: #fff;
-    }
-
 }
 
 @media (max-width: 1390px) {
     .timezone select {
-        width: 14rem;
+        width: 16rem;
     }
 
     .language select {
-        width: 14rem;
+        width: 16rem;
     }
 
-    .select-option {
-        background-color: #fff;
+    form div input {
+        width: 40rem;
     }
 
 }
@@ -232,14 +238,6 @@ form div input {
         width: 16rem;
     }
 
-    .left {
-        margin: 12rem 3rem;
-    }
-
-    .right {
-        margin: 5rem 3rem;
-    }
-
     .left-wrapper {
         height: 100vh;
     }
@@ -252,11 +250,16 @@ form div input {
         margin: 2rem 0;
     }
 
-    .select-option {
-        background-color: #fff;
+    form div input {
+        width: 38rem;
     }
-
 }
+
+@media (max-width: 1200px) {
+    form div input {
+        width: 35rem;
+    }
+} 
 
 @media (max-width: 1150px) {
     .timezone select {
@@ -267,10 +270,9 @@ form div input {
         width: 14.5rem;
     }
 
-    .select-option {
-        background-color: #fff;
+    form div input {
+        width: 32rem;
     }
-
 }
 
 @media (max-width: 1060px) {
@@ -280,14 +282,6 @@ form div input {
 
     .language select {
         width: 13rem;
-    }
-
-    .left {
-        margin: 10rem 3rem;
-    }
-
-    .select-option {
-        background-color: #fff;
     }
 
 }
@@ -301,10 +295,6 @@ form div input {
         width: 10.3rem;
     }
 
-    .left {
-        margin: 10rem 3rem;
-    }
-
     .buttons {
         display: flex;
         flex-flow: column;
@@ -328,10 +318,16 @@ form div input {
         font-size: 0.9rem;
     }
 
-    .select-option {
-        background-color: #fff;
+    form div input {
+        width: 27rem;
     }
 
+}
+
+@media (max-width: 890px) {
+    form div input {
+        width: 25rem;
+    }
 }
 
 @media (max-width: 800px) {
@@ -339,7 +335,6 @@ form div input {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: #fff;
     }
 
     .timezone select {
@@ -351,17 +346,14 @@ form div input {
     }
 
     .container {
+        position: relative;
         display: flex;
         flex-flow: column;
     }
 
     .left-wrapper {
         width: 100%;
-        height: 40%;
-    }
-
-    .left {
-        margin: 10rem 5rem;
+        height: 50vh;
     }
 
     .left h1 {
@@ -370,101 +362,43 @@ form div input {
 
     .right-wrapper {
         width: 100%;
-        height: 60%;
+        height: 50vh;
+        position: relative;
     }
 
     .right {
-        margin: 5rem 3rem;
-    }
-
-    .buttons {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .btn-1 {
-        margin-bottom: 0;
-        padding: 0.9rem 3rem;
+        position: absolute;
+        margin: 14rem 0rem; 
     }
 
     .footer {
         margin: 2rem 0;
         font-size: 0.9rem;
     }
+
+    form div input {
+        width: 35rem;
+    }
 }
 
-@media (max-width: 520px) {
-    .buttons {
-        display: flex;
-        flex-flow: column;
-        align-items: flex-start;
+@media (max-width: 630px) {
+    form div input {
+        width: 30rem;
     }
+}
 
-    .btn-1 {
-        margin-bottom: 1rem;
+@media (max-width: 540px) {
+    form div input {
+        width: 25rem;
     }
+}
 
-    .left {
-        margin: 11rem 2rem;
+@media (max-width: 500px) {
+    form div input {
+        width: 25rem;
     }
 
     .left h1 {
-        font-size: 5rem;
-    }
-
-    .left-wrapper {
-        width: 100%;
-        height: 50%;
-    }
-
-    .right-wrapper {
-        width: 100%;
-        height: 50%;
-    }
-
-    .footer {
-        margin: 2rem 0;
-        font-size: 0.9rem;
-    }
-
-    .select-option {
-        background-color: #fff;
-    }
-
-}
-
-@media (max-width: 400px) {
-    .timezone select {
-        width: 16rem;
-    }
-
-    .language select {
-        width: 16rem;
-    }
-
-    .left-wrapper {
-        width: 100%;
-        height: 50%;
-    }
-
-    .right-wrapper {
-        width: 100%;
-        height: 50%;
-    }
-
-    .select-option {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: #fff;
-    }
-
-    .timezone select {
-        width: 100%;
-    }
-
-    .language select {
-        width: 100%;
+        font-size: 4rem;
     }
 }
