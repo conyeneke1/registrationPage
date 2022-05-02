@@ -395,7 +395,7 @@ form div input {
 
 @media (max-width: 500px) {
     form div input {
-        width: 25rem;
+        width: 22rem;
     }
 
     .left h1 {
@@ -403,7 +403,7 @@ form div input {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 425px) {
     form div input {
         width: 20rem;
     }
